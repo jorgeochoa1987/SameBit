@@ -5,7 +5,7 @@
     print_r($_SESSION['logged_in_user_id']);
     if($_SESSION['logged_in_user_id'] != '1'){
       //session_start();
-      header('Location:http://localhost/SAME_BIT/login.html');
+      // header('Location:http://localhost/SAME_BIT/login.html');
     }
     else{
     }
@@ -18,7 +18,7 @@
 
     <!-- Logo -->
     <div class="top_imagen">
-    <img src='img/SameinLogo.png,<?php echo base64_encode(file_get_contents("img/SameinLogo.png")); ?>'>
+    <img src='../img/SameinLogo.png'>
        <!--  <img src='img/SameinLogo.png' alt="logo" width="130px"> -->
     </div>
     
@@ -33,7 +33,7 @@
       <!-- <a href="#">Cerrar sesión</a> -->
      <div class="LogOut">
       <span>Cerrar Sesión</span>
-      <a href="logout.php"><img src="img/off.png" alt="logo" width="30px"></a>
+      <a href="logout.php"><img src="../img/off.png" alt="logo" width="30px"></a>
      </div>
     </nav>
   </div>
